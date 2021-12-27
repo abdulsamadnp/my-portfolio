@@ -1,0 +1,85 @@
+<!-- start section contact -->
+<div id="contact" class="paddsection">
+    <div class="container">
+        <div class="contact-block1">
+            <div class="row">
+
+                <div class="col-lg-6">
+                    <div class="contact-contact">
+
+                        <h2 class="mb-30">GET IN TOUCH</h2>
+
+                        <ul class="contact-details">
+                            <li><span>Fathima's</span></li>
+                            <li><span>Chalad(PO), Kannur</span></li>
+                            <li><span>Kerala, India</span></li>
+                            <li><span>+91 8089 887 704, +91 9895 957 704</span></li>
+                            <li><span>smdchalad@gmail.com</span></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <form class="form-contact contact_form container" action="{% url 'mhome' %}" method="post" id="contactForm" novalidate="novalidate">
+                        {% csrf_token %}
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group contact-block1">
+                                    {{ form.first_name }}
+                                    <!-- <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" /> -->
+                                    <!-- <div class="validation"></div> -->
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    {{ form.last_name }}
+                                    <!-- <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" /> -->
+                                    <!-- <div class="validation"></div> -->
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    {{ form.emailid }}
+                                    <!-- <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" /> -->
+                                    <!-- <div class="validation"></div> -->
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    {{form.phone_number}}
+                                    <!-- <input type="tel" class="form-control" name="mob" id="mob" placeholder="Mobile" data-rule="minlen:4" data-msg="Please enter at least 10 chars of subject" /> -->
+                                    <!-- <div class="validation"></div> -->
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    {{form.subject}}
+                                    <!-- <textarea class="form-control" name="message" rows="12" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea> -->
+                                    <!-- <div class="validation"></div> -->
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    {{form.message}}
+                                    <!-- <textarea class="form-control" name="message" rows="12" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea> -->
+                                    <!-- <div class="validation"></div> -->
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <button type="submit" class="btn btn-outline-success">Send Message</button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end section contact -->

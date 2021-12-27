@@ -1,0 +1,45 @@
+
+body {
+  background: #090909;
+  color: #898989;
+  font-family: 'Poppins', helvetica;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  overflow-x: hidden;
+  margin: 0 auto;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.bg-black {
+  background: #000;
+}
+
+.hero-black {
+  background: #000;
+  opacity: 0.8;
+}
+
+.card-project:hover {
+  border: 1px solid #eee;
+  cursor: pointer;
+}
+
+
+.pro-pic {
+  width: 421px;
+  height: auto;
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .pro-pic {
+    width: 221px;
+    height: auto;
+  }
+}
